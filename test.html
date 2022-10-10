@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加载动画</title>
+    <script src="js/jquery.1.11.1.min.js"></script>
+</head>
+<input type="text" class="userName">
+<button onclick="getMessage()">查询</button>
+
+<body>
+    <textarea name="playerInfo" id="playerInfo" cols="30" rows="10">
+
+    </textarea>
+</body>
+<script>
+    var data = "";
+    let getMessage = () => {
+        let playerName = $(".userName").val();
+        let Info = $("#playerInfo")
+        console.log(playerName);
+        $.ajax({
+            url: "https://hqshi.cn/api/status?nickname=" + playerName,
+            type: "get",
+            data: JSON.stringify(data),
+            success: (result) => {
+                console.log(result.body.rockstar_id);
+                console.log(result.body.名称);
+                console.log(result.body.当前帮会);
+                console.log(result.body.所在地);
+                console.log(result.body.所在地代码
+);
+                console.log(result.body.最近游玩);
+                console.log(result);
+            }, error: (e) => {
+                console.log(e);
+            }
+        })
+    }
+</script>
+
+</html>

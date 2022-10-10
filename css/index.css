@@ -1,0 +1,110 @@
+@font-face {
+    font-family: KeBianTi;
+    src: url("../resource/JetBrainsMono-Medium-3.ttf");
+}
+
+.contant {
+    display: flex;
+    width: 100vw;
+    height: 94vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin: 1vw;
+    width: 28vw;
+    height: 40vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    display: inline-block;
+    border-radius: 20px;
+    text-align: center;
+    user-select: none;
+    transition: all 0.5s;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.2), inset 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-text {
+    display: block;
+    font-size: 4vh;
+    font-family: KeBianTi, serif;
+}
+
+.icon {
+    font-size: 10vw;
+}
+
+.card-a {
+    margin-top: 2vh;
+    display: inline-block;
+    width: 7vw;
+    height: 6vh;
+    line-height: 6vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    font-size: 3vh;
+}
+
+.card-a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.5;
+}
+
+.card-a:active {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+}
+
+.yiyan {
+    display: flex;
+    text-align: center;
+    line-height: 5vh;
+    width: calc(auto+20vw);
+    height: 8vh;
+    position: absolute;
+    top: 85vh;
+    border-radius: 20px;
+    transition: all 0.5s;
+    justify-content: center;
+    user-select: none;
+}
+
+.yiyan:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+}
+
+#hitokoto {
+    display: inline-block;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    color: white;
+}
+
+#hitokoto_text {
+    color: rgb(197, 199, 202);
+
+}
+
+#from {
+    color: rgba(255, 255, 255, 0);
+    display: inline-block;
+    position: absolute;
+    transition: all 0.5s;
+    top: 3vh;
+    font-size: 0.7vw;
+}
+
+.yiyan:hover #from {
+    color: rgba(197, 199, 202, 1);
+}
+
+#he-plugin-standard {
+    top: 0;
+    position: absolute;
+}

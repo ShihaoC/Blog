@@ -1,0 +1,47 @@
+@font-face {
+    font-family:KeBianTi;
+    src: url("../Resource/JetBrainsMono-Medium-3.ttf");
+  }
+.header{
+    position:absolute;
+    top:0;
+    width: 100vw;
+    height: 6vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+    display: flex;
+}
+.header-text{
+    margin: 3vh;
+    font-size: 3vh;
+    line-height: 6vh;
+    color: white;
+    font-family: KeBianTi, serif;
+    transition: all 0.5s;
+    user-select: none;
+}
+.header-text:hover{
+    color: rgb(0, 132, 255);
+}
+ul li{
+    display: inline;
+    padding-right: 2vh;
+    color:white;
+}
+ul li a{
+    color:white;
+    transition: all 0.5s;
+    font-size: 1vw;
+}
+a:hover{
+    color: rgb(0, 132, 255);
+}
+ul li:hover{
+    color: rgb(0, 132, 255);
+}
+.list{
+    right: 3vw;
+    line-height: 6vh;
+    position: absolute;
+    top:0;
+}

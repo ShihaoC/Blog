@@ -1,0 +1,99 @@
+body {
+    overflow-y: hidden;
+}
+
+.items {
+    overflow-x: hidden;
+    position: relative;
+    top: 6vh;
+    width: 100vw;
+    height: 94vh;
+    display: none;
+    transition: all 0.5s;
+}
+
+.box {
+    line-height: 9vh;
+    width: 100vw;
+    height: 9vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    transition: all 0.2s;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.box:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.box:hover .icon {
+    transition: all 0.5s;
+    color: rgb(0, 132, 255);
+}
+
+.name,
+.time,
+.icon,
+.size,
+.download {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+}
+
+.icon {
+    transition: all 0.5s;
+    line-height: 9vh;
+    font-size: 3vw;
+    width: 6.7vw;
+}
+
+.name,
+.size {
+    width: 20vw;
+}
+
+.time {
+    width: 24.4vw;
+}
+
+.download {
+    transition: all 0.5s;
+    margin-left: 7vw;
+}
+
+.download a:hover {
+    transition: all 0.5s;
+}
+
+.box-txt {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100vw;
+    color: white;
+    height: 6vh;
+}
+
+.icon-txt {
+    width: 2vw;
+    margin: 2.5vw;
+}
+
+.name-txt {
+    width: 20.3vw;
+}
+
+.size-txt {
+    width: 20.5vw;
+}
+
+.time-txt {
+    width: 38.2vw;
+}
+
+.show {
+    position: relative;
+    right: 6vw;
+    color: white;
+}
